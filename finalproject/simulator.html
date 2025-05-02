@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocean Simulator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #00b0b9;
+    }
+
+    .fish {
+      position: absolute;
+      width: 80px;
+      transition: transform 0.3s ease;
+    }
+
+ 
+
+    #warning {
+      color: red;
+      font-weight: bold;
+      display: none;
+      margin-top: 10px;
+    }
+
+    #cleanBtn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+
+<button id="cleanBtn">Clean Up</button>
+
+<script src="sketch.js"></script>
+
+</body>
+</html>
+
